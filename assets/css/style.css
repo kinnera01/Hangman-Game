@@ -1,0 +1,54 @@
+body{
+  background:url(https://myclone.files.wordpress.com/2011/02/home-hangman-photoshopped.jpg);
+}
+h1{
+  font-family: 'Slackey', cursive;
+  margin-top: 40px;
+  font-size: 40px;
+  color: white;
+  text-align:center;
+  background: -webkit-linear-gradient(yellow, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+p{
+  font-family: 'Faustina', serif;
+  font-size: 30px;
+  padding: 3px;
+  color:white;
+  background: -webkit-linear-gradient(white,lightblue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#section1,#section2{
+  margin-top: 40px;
+}
+#section2{
+ /* border: 2px dotted black;*/
+  font-size: 30px;
+  float: right;
+  margin-right: 30px;
+}
+#game{
+	width:auto;
+  font-size: 40px;
+
+}
+#endgame{
+  font-size: 60px;
+  font-family: 'Slackey';
+  font-weight: bold italic;
+  color: red;
+  background: -webkit-linear-gradient(yellow,red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#image{
+   width:415px;
+   height:496px;
+}
+#button{
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+}
