@@ -11,14 +11,12 @@ h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 p{
   font-family: 'Faustina', serif;
   font-size: 30px;
   padding: 3px;
   color:white;
-  background: -webkit-linear-gradient(white,lightblue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 #section1,#section2{
   margin-top: 40px;
