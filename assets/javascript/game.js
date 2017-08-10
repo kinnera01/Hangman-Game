@@ -6,7 +6,19 @@ var letters;
 var guessesLeft;
 var userword;
 var dash = "_";
-
+// var img = newImage();
+// // img.src = ["assets/images/1.jpg","assets/images/2.jpg","assets/images/3.jpg","assets/images/4.jpg","assets/images/5.jpg"];
+// function newImage(){    
+//    if(guessesLeft >= 0) imageName = "https://static-s.aa-cdn.net/img/ios/289265443/8fbc582695a59bf087b7c53c8349a2af?v=1";
+//    if(error >= 1) imageName = "assets/images/1.jpg";
+//    if(error >= 2) imageName = "assets/images/2.jpg";
+//    if(error == 3) imageName = "assets/images/3.jpg";
+//    if(error == 4) imageName = "assets/images/4.jpg";
+//    if(error == 5) imageName = "assets/images/5.jpg";
+//     var ImageIcon= null;
+//     if(imageName != null){
+//         icon = new ImageIcon(imageName);
+//     }
 function newGame() {
       guessesLeft = 5;
       letters = [];
@@ -14,7 +26,7 @@ function newGame() {
       console.log( randomword);
       var l = randomword.length; //counting length of word choosen by computer.
     	 userword = dash.repeat(l);
-    	console.log(userword);   
+    	console.log(userword);      
     }
 function getindex(word, character) { //to get position of character in a word
       var indices = []; //taking empty straing to store positions.
@@ -50,17 +62,17 @@ function getindex(word, character) { //to get position of character in a word
           // console.log(guessesLeft);
         }
         if (guessesLeft == 0) {
-          // alert("gameover")
+          alert("gameover");
           losses++;
           var gameOver = "you lost!!"
-          document.querySelector("#endgame").innerHTML = gameOver;
+          // document.querySelector("#endgame").innerHTML = gameOver;
           newGame();
         }
         if (userword === randomword) {
           win++;
-          // alert("you Won!!");
+          alert("you Won!!");
           var gameOver = "you won!!"
-      	  document.querySelector("#endgame").innerHTML = gameOver;
+      	  // document.querySelector("#endgame").innerHTML = gameOver;
       	  newGame();
         }
       } else {
