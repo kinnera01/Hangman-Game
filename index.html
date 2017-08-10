@@ -8,32 +8,33 @@
   <title>Hangaman Game</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Faustina" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Aclonica|Electrolize|Slackey" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <h1>Welcome to hangman game!!</h1>
-    <hr>
-    <div class="container-fluid ">
-      <div class="row">
-    <div id="section1" class="col-md-3  col-md-offset-1 col-sm-4  col-sm-offset-1" >
-    <img src="https://static-s.aa-cdn.net/img/ios/289265443/8fbc582695a59bf087b7c53c8349a2af?v=1" class="img-rounded pull-left img-responsive" id ="image" alt="my pic">
+  <h1>Welcome to hangman game!!</h1>
+  <hr>
+  <div class="container-fluid ">
+    <div class="row">
+      <div id="section1" class="col-md-3  col-md-offset-1 col-sm-4  col-sm-offset-1">
+        <img src="https://static-s.aa-cdn.net/img/ios/289265443/8fbc582695a59bf087b7c53c8349a2af?v=1" class="img-rounded pull-left img-responsive" id="image" alt="my pic">
+      </div>
+      <div id="section2" class="col-md-6 col-md-offset-1 col-sm-5 col-sm-offset-1 ">
+        <p id="game">Press any key to start game!!!</p>
+        <div id="endgame">
+        </div>
+        <button id="button" style="display:none" onclick="newGame();">PLAY AGAIN</button>
+      </div>
     </div>
-    <div id="section2" class="col-md-6 col-md-offset-1 col-sm-5 col-sm-offset-1 " >
-    <p id="game">Press any key to start game!!!</p>
-    <div  id="endgame">
-     </div>
-    <button id="button" style="display:none" onclick="newGame();"><p>PLAY AGAIN</p></button>
   </div>
-  </div>
-  </div>
-  
- <!-- <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=_dK2tDK9grQ&name=Ed+Sheeran+Shape+Of+You+Official+Lyric+Video" frameborder="0" allowfullscreen loop="true"></iframe> -->
+
+  <!-- <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=_dK2tDK9grQ&name=Ed+Sheeran+Shape+Of+You+Official+Lyric+Video" frameborder="0" allowfullscreen loop="true"></iframe> -->
 
 
-<script src="assets/javascript/game.js">
-    
-</script> 
+  <script src="assets/javascript/game.js">
+  </script>
 </body>
+
 </html>
