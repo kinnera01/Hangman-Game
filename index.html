@@ -19,20 +19,19 @@
   <div class="container-fluid ">
     <div class="row">
       <div id="section1" class="col-md-3  col-md-offset-1 col-sm-4  col-sm-offset-1">
-        <img src="https://static-s.aa-cdn.net/img/ios/289265443/8fbc582695a59bf087b7c53c8349a2af?v=1" class="img-rounded pull-left img-responsive" id="image" alt="my pic">
+        <img src="https://static-s.aa-cdn.net/img/ios/289265443/8fbc582695a59bf087b7c53c8349a2af?v=1" class="img-rounded pull-left img-responsive" id="imageid" alt="my pic">
       </div>
       <div id="section2" class="col-md-6 col-md-offset-1 col-sm-5 col-sm-offset-1 ">
         <p id="game">Press any key to start game!!!</p>
         <div id="endgame">
         </div>
-        <button id="button" style="display:none" onclick="newGame();">PLAY AGAIN</button>
+        <button id="button" value="playagain" style="display:none" onclick="newGame()">PLAY AGAIN</button>
       </div>
     </div>
   </div>
-
-  <!-- <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=_dK2tDK9grQ&name=Ed+Sheeran+Shape+Of+You+Official+Lyric+Video" frameborder="0" allowfullscreen loop="true"></iframe> -->
-
-
+    <audio controls autoplay loop hidden>
+      <source src="assets/images/song.mp3" type="audio/mp3">
+    </audio>
   <script src="assets/javascript/game.js">
   </script>
 </body>

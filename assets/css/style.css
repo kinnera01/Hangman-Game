@@ -41,9 +41,9 @@ p{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#image{
-   width:600px;
-   height:496px;
+#imageid{
+   width:500px;
+   height:400px;
 }
 #button{
   font-size: 30px;
