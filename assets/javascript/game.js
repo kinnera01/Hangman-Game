@@ -8,8 +8,9 @@ var userword;
 var dash = "_";
 function newGame() {
   userword = "";
-  guessesLeft = 6;
+  guessesLeft = 5;
   letters = [];
+  start=true;
   randomword = arr[Math.floor(Math.random() * arr.length)];
   console.log(randomword);
   var l = randomword.length; //counting length of word choosen by computer.
@@ -28,6 +29,11 @@ function getindex(word, character) //to get position of character in a word
 }
 document.onkeyup = function(event) {
   var userinput = event.key;
+  if(start==true){
+    start=false;
+    // return;
+  }
+  else{
   console.log(userinput);
   var inputlower = (userinput.toLowerCase());
   if (letters.indexOf(inputlower) == -1) {
@@ -65,8 +71,12 @@ document.onkeyup = function(event) {
       }
     }
     if (guessesLeft == 0) {
+
       alert("gameover");
       losses++;
+      // if(losses >= 1) {
+      //   <embed loop="true" src="assets/images/1.mp3" hidden="true" type="video/quicktime"></embed>
+      // }
       newGame();
       // var gameOver = "you lost!!"
       // document.querySelector("#endgame").innerHTML = gameOver;
@@ -84,8 +94,9 @@ document.onkeyup = function(event) {
   } else {
     alert("you already guessed letter!!");
   }
+}
   var score =
-    "<p>Guess what word i am thinking : " + userword.split("").join(" ") + "</p>" +
+    "<p>Guess the Animal: " + userword.split("").join(" ") + "</p>" +
     "<p>Win: " + win + "</p>" +
     "<p>loss: " + losses + "</p>" +
     "<p>guess: " + guessesLeft + "</p>" +
