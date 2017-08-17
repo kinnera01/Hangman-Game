@@ -36,6 +36,7 @@ document.onkeyup = function(event) {
   else{
   console.log(userinput);
   var inputlower = (userinput.toLowerCase());
+  if(inputlower>64 && inputlower<91){
   if (letters.indexOf(inputlower) == -1) {
     letters.push(inputlower); //pushungletter
     var index = getindex(randomword, inputlower);
@@ -94,7 +95,10 @@ document.onkeyup = function(event) {
   } else {
     alert("you already guessed letter!!");
   }
-}
+  //  else if {
+  //   alert("enter valid letters!");
+  // }
+  }
   var score =
     "<p>Guess the Animal: " + userword.split("").join(" ") + "</p>" +
     "<p>Win: " + win + "</p>" +
