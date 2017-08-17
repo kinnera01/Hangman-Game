@@ -29,6 +29,9 @@ function getindex(word, character) //to get position of character in a word
 }
 document.onkeyup = function(event) {
   var userinput = event.key;
+  var userinputkeyCode=event.keyCode;
+  console.log(userinputkeyCode);
+  // if(userinputkeyCode>64 && userinputkeyCode<91){
   if(start==true){
     start=false;
     // return;
@@ -36,9 +39,10 @@ document.onkeyup = function(event) {
   else{
   console.log(userinput);
   var inputlower = (userinput.toLowerCase());
-  if(inputlower>64 && inputlower<91){
+  if(userinputkeyCode>64 && userinputkeyCode<91){
+  // if(inputlower>64 && inputlower<91){
   if (letters.indexOf(inputlower) == -1) {
-    letters.push(inputlower); //pushungletter
+    letters.push(inputlower); //pushingletter
     var index = getindex(randomword, inputlower);
     console.log(index);
     if (index.length != 0) {
@@ -98,6 +102,7 @@ document.onkeyup = function(event) {
   //  else if {
   //   alert("enter valid letters!");
   // }
+}
   }
   var score =
     "<p>Guess the Animal: " + userword.split("").join(" ") + "</p>" +
