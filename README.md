@@ -13,3 +13,7 @@ A letter can be guessed only once and for each wrong guess, the chances are decr
 * CSS
 * BOOTSTRAP
 * JAVASCRIPT
+
+# Link to Play
+[https://kinnera01.github.io/Hangman-Game/]
+
